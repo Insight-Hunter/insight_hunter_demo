@@ -27,7 +27,7 @@ export default function Dashboard() {
 
       <div style={{ display:'grid', gridTemplateColumns:'2fr 1fr', gap:16, marginTop:16 }}>
         <ChartCard data={rows} />
-        <Insights data={rows} />
+        <Insights fallback={[]} />
       </div>
 
       <div style={{ marginTop:16 }}>
@@ -36,7 +36,7 @@ export default function Dashboard() {
 
       <h3 style={{ marginTop:16 }}>Data Table</h3>
       <div style={{ border:'1px solid #ddd', borderRadius:8, padding:16 }}>
-        <table width="100%" cellPadding="8">
+        <table width="100%" cellPadding={8}>
           <thead><tr>
             <th align="left">Month</th>
             <th align="right">Revenue</th>
