@@ -4,3 +4,7 @@ pages_build_output_dir = "dist"
 
 [vars]
 APP_NAME = "Insight Hunter Demo"
+DEMO_USER = "demo"
+DEMO_Pass = "demo"
+SENDER_EMAIL = "no-reply@hunterturner.com"   # if you own a domain with correct SPF
+NOTIFY_TO = "you@company.com"              # default recipient for demo

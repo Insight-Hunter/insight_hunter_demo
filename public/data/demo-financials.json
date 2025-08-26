@@ -1,12 +1,14 @@
 [
-  { "month": "Mar", "revenue": 18500, "grossProfit": 11100, "netIncome": 5200 },
-  { "month": "Apr", "revenue": 20100, "grossProfit": 12060, "netIncome": 6100 },
-  { "month": "May", "revenue": 22300, "grossProfit": 13380, "netIncome": 6900 },
-  { "month": "Jun", "revenue": 24900, "grossProfit": 14940, "netIncome": 7800 },
-  { "month": "Jul", "revenue": 26500, "grossProfit": 15900, "netIncome": 8200 },
-  { "month": "Aug", "revenue": 27800, "grossProfit": 16680, "netIncome": 8600 }
+  { "month": "Sep", "revenue": 19000, "grossProfit": 11400, "netIncome": 5200 },
+  { "month": "Oct", "revenue": 20500, "grossProfit": 12300, "netIncome": 5800 },
+  { "month": "Nov", "revenue": 21800, "grossProfit": 13080, "netIncome": 6400 },
+  { "month": "Dec", "revenue": 23600, "grossProfit": 14160, "netIncome": 6900 },
+  { "month": "Jan", "revenue": 24800, "grossProfit": 14880, "netIncome": 7200 },
+  { "month": "Feb", "revenue": 25500, "grossProfit": 15300, "netIncome": 7600 },
+  { "month": "Mar", "revenue": 26800, "grossProfit": 16080, "netIncome": 8200 },
+  { "month": "Apr", "revenue": 28400, "grossProfit": 17040, "netIncome": 8800 },
+  { "month": "May", "revenue": 30100, "grossProfit": 18060, "netIncome": 9300 },
+  { "month": "Jun", "revenue": 31700, "grossProfit": 19020, "netIncome": 9800 },
+  { "month": "Jul", "revenue": 33200, "grossProfit": 19920, "netIncome": 10400 },
+  { "month": "Aug", "revenue": 34800, "grossProfit": 20880, "netIncome": 11100 }
 ]
-<<<<<<< HEAD
-
-=======
->>>>>>> bb868bd (update to demo files)
