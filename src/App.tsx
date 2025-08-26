@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 import React from 'react'
 import { Link, Outlet, useLocation } from 'react-router-dom'
 
@@ -20,7 +18,7 @@ export default function App() {
       <Outlet/>
       <footer style={{ marginTop: 32, opacity: 0.7 }}>
         Cloudflare Pages + Functions (Hono) • Read-only demo
-      </footer>
+/footer>
 =======
 import React from 'react'
 import { Link, Outlet, useLocation } from 'react-router-dom'
@@ -39,7 +37,6 @@ export default function App() {
         </nav>
       </header>
       <Outlet/>
->>>>>>> bb868bd (update to demo files)
     </div>
   )
 }
