@@ -1,23 +1,23 @@
-import React from 'react'
-<<<<<<< HEAD
+import React, { useState } from 'react'
+import AuthForm from '../components/AuthForm'
 
 export default function Login() {
-  return (
-    <div>
-      <h2>Demo Login</h2>
-      <p>Use the read-only demo: <b>email:</b> demo@insighthunter.app • <b>password:</b> demo</p>
-      <p>(This screen is non-functional in demo; it’s here to show the UX.)</p>
-    </div>
-  )
-}
+  const [message, setMessage] = useState<string>('Use demo credentials → demo@insighthunter.app / demo')
 
-=======
-export default function Login(){
+  const handleSubmit = async (email: string, password: string) => {
+    // Demo-only behavior: accept demo/demo, otherwise show message
+    if (email === 'demo@insighthunter.app' && password === 'demo') {
+      setMessage('Authenticated (demo). In production this would redirect to / with a session.')
+    } else {
+      setMessage('Invalid credentials in demo. Use demo@insighthunter.app / demo.')
+    }
+  }
+
   return (
     <div>
-      <h2>Demo Login</h2>
-      <p>email: <b>demo@insighthunter.app</b> • password: <b>demo</b> (non-functional in demo)</p>
+      <h2>Login</h2>
+      <AuthForm onSubmit={handleSubmit}/>
+      <p style={{ marginTop:12, opacity:0.8 }}>{message}</p>
     </div>
   )
 }
->>>>>>> bb868bd (update to demo files)
