@@ -1,4 +1,4 @@
-cat > tsconfig.json <<'JSON'
+
 {
   "compilerOptions": {
     "target": "ES2022",
@@ -14,4 +14,3 @@ cat > tsconfig.json <<'JSON'
   "include": ["src", "functions"]
 }
 
-JSON
