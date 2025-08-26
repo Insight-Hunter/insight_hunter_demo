@@ -1,1 +1,9 @@
+[
+  { "month": "Mar", "revenue": 18500, "grossProfit": 11100, "netIncome": 5200 },
+  { "month": "Apr", "revenue": 20100, "grossProfit": 12060, "netIncome": 6100 },
+  { "month": "May", "revenue": 22300, "grossProfit": 13380, "netIncome": 6900 },
+  { "month": "Jun", "revenue": 24900, "grossProfit": 14940, "netIncome": 7800 },
+  { "month": "Jul", "revenue": 26500, "grossProfit": 15900, "netIncome": 8200 },
+  { "month": "Aug", "revenue": 27800, "grossProfit": 16680, "netIncome": 8600 }
+]
 
