@@ -1,15 +1,13 @@
-<<<<<<< HEAD
-
 name = "insight-hunter-demo"
 pages_build_output_dir = "dist"
 compatibility_date = "2024-11-12"
-=======
 name = "insight_hunter_demo"
 compatibility_date = "2024-11-12"
 pages_build_output_dir = "dist"
 [vars]
 APP_NAME = "Insight Hunter Demo"
+DEMO_USER = "demo"
+DEMO_PASS = "demo"
 [build]
 upload_source_maps = true
 account_id = "18c8e61a3669253dcfd0c7eec6be36a3"
->>>>>>> bb868bd (update to demo files)
