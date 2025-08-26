@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 
 export default function Login() {
   return (
@@ -10,3 +11,13 @@ export default function Login() {
   )
 }
 
+=======
+export default function Login(){
+  return (
+    <div>
+      <h2>Demo Login</h2>
+      <p>email: <b>demo@insighthunter.app</b> • password: <b>demo</b> (non-functional in demo)</p>
+    </div>
+  )
+}
+>>>>>>> bb868bd (update to demo files)

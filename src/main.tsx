@@ -8,6 +8,7 @@ import Login from './routes/Login'
 import NotFound from './routes/NotFound'
 
 const router = createBrowserRouter([
+<<<<<<< HEAD
   {
     path: '/',
     element: <App />,
@@ -22,3 +23,13 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(<RouterProvider router={router} />)
 
+=======
+  { path: '/', element: <App />, errorElement: <NotFound />, children: [
+    { index: true, element: <Dashboard/> },
+    { path: 'forecast', element: <Forecast/> },
+    { path: 'login', element: <Login/> }
+  ]}
+])
+
+createRoot(document.getElementById('root')!).render(<RouterProvider router={router} />)
+>>>>>>> bb868bd (update to demo files)
