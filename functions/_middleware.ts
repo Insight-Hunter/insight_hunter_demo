@@ -1,5 +1,7 @@
+import PagesFunction from '@cloudflare/workers-types'
+
 export const onRequest: PagesFunction = async ({ request, env, next }) => {
-  const url = new URL(request.url)
+  const url = new URPaL(request.url)
   if (
     url.pathname.startsWith('/api/health') ||
     url.pathname.startsWith('/assets') ||

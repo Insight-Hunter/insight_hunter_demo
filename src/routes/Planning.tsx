@@ -12,7 +12,7 @@ export default function Planning(){
 
   const scenario = useMemo(()=>{
     let bal = base[0]?.eomBalance ?? 40000
-    return base.map(r=>{
+      return base.map(r=>{
       const cashIn = Math.round(r.cashIn * revMult)
       const cashOut = Math.round(r.cashOut * expMult + hireCost)
       const netCash = cashIn - cashOut
@@ -27,8 +27,8 @@ export default function Planning(){
     alert('Scenario saved')
   }
 
-  return (
-    <div className="container">
+      return (
+      <div className="container">
       <div className="h1">Forecasting & Planning</div>
 
       <div className="card" style={{display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:12}}>

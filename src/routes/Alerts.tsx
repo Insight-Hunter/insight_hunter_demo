@@ -6,7 +6,7 @@ export default function Alerts(){
   const [email, setEmail] = useState('')
   const [rule, setRule] = useState('mrr_drop_gt_10')
   const load = () => fetch('/api/alerts').then(r=>r.json()).then(d=>setList(d.alerts||[]))
-  useEffect(load, [])
+  useEffect(() => { load() }, [])
 
   const add = async (e:React.FormEvent)=>{ e.preventDefault()
     await fetch('/api/alerts', { method:'POST', headers:{'content-type':'application/json'}, body: JSON.stringify({ email, rule }) })
@@ -22,9 +22,9 @@ export default function Alerts(){
       <form onSubmit={add} className="card" style={{display:'grid', gap:12, gridTemplateColumns:'2fr 1fr auto'}}>
         <input className="input" placeholder="Email to notify" value={email} onChange={e=>setEmail(e.target.value)} />
         <select className="select" value={rule} onChange={e=>setRule(e.target.value)}>
-          <option value="mrr_drop_gt_10">MRR drops >10%</option>
-          <option value="expense_spike_gt_20">Expense spike >20%</option>
-          <option value="runway_lt_6m">Runway < 6 months</option>
+          <option value="mrr_drop_gt_10">MRR drops 10%</option>
+          <option value="expense_spike_gt_20">Expense spike 20%</option>
+          <option value="runway_lt_6m">Runway 6 months</option>
         </select>
         <button className="btn" type="submit">Add</button>
       </form>
