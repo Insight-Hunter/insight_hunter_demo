@@ -1,0 +1,45 @@
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+  background: var(--bg);
+}
+
+img, svg, video, canvas { display: block; max-width: 100%; }
+button { font: inherit; }
+
+.container { width: 100%; max-width: 520px; margin: 0 auto; padding: 16px; }
+
+.h-stack { display: flex; align-items: center; gap: 12px; }
+.v-stack { display: flex; flex-direction: column; gap: 12px; }
+.spread { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-1);
+  padding: 16px;
+}
+
+.heading { font-weight: 700; letter-spacing: -0.02em; }
+.h1 { font-size: 28px; line-height: 1.1; }
+.h2 { font-size: 22px; line-height: 1.15; }
+.h3 { font-size: 18px; line-height: 1.2; }
+.text-muted { color: var(--muted); }
+.text-dim { color: var(--muted-2); }
+
+/* Page enter animations */
+@keyframes fadeSlideUp { from { opacity: 0; transform: translateY(8px) } to { opacity: 1; transform: translateY(0) } }
+.page { animation: fadeSlideUp .28s ease both; }
+
+/* Shimmer for skeletons */
+@keyframes shimmer { 0% { background-position: -468px 0 } 100% { background-position: 468px 0 } }
+.skeleton {
+  border-radius: 12px; height: 12px; width: 100%;
+  background: linear-gradient(90deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.12) 50%, rgba(255,255,255,0.04) 100%);
+  background-size: 936px 100%; animation: shimmer 1.2s infinite linear;
+}
