@@ -10,7 +10,7 @@ set -euo pipefail
 # Run from the ROOT of your Vite + React Router (TypeScript) app.
 # ------------------------------------------------------------
 
-backup() {npm 
+backup() {npm
   local f="$1"
   if [ -f "$f" ]; then
     local ts
